@@ -7,13 +7,16 @@
 </head>
 <body>
     <a href="Index.html">HOME</a><br>
-    <input type="text" id="inp">
+    <input type="text" id="inp" placeholder="2024 T20 Worldcup winner">
     <button onclick="display()">SUBMIT</button>
     <h1 id="demo"></h1>
     <script>
         function display(){
             var text=document.getElementById("inp").value
             document.getElementById("demo").innerHTML=text
+            if(text=="India"){
+            window.alert("Correct answer..")
+            }
         }
     </script>
 </body>
