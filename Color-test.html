@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-Test</title>
+    <style>
+        #screen{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="Index.html">HOME</a><hr>
+    <div id="screen">
+
+    </div>
+    <button onclick="color('red')">RED</button>
+    <button onclick="color('blue')">BLUE</button>
+    <button onclick="color('green')">GREEN</button>
+    <button onclick="color('orange')">ORANGE</button>
+
+    <script>
+        function color(col){
+            document.getElementById("screen").style.background=col
+        }
+    </script>
+</body>
+</html>
